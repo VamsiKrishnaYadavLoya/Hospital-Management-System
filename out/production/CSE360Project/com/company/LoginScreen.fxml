@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="LoginPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="40.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="EmployeePane" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label fx:id="EmployeeLoginTitle" prefHeight="17.0" prefWidth="112.0" text="Log in as Employee" textAlignment="CENTER" />
+            <TextField fx:id="employeeUsername" promptText="Username" />
+            <PasswordField fx:id="employeePassword" promptText="Password" />
+            <Button fx:id="employeeLogin" mnemonicParsing="false" onAction="#onEmployeeLoginClick" text="Login" />
+            <Label fx:id="EmployeeLoginStatusLabel" alignment="CENTER" prefHeight="40.0" prefWidth="180.0" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox fx:id="PatientPane" alignment="CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Label fx:id="PatientLoginTitle" text="Log in as Patient" textAlignment="CENTER" />
+            <TextField fx:id="patientUsername" promptText="Username" />
+            <PasswordField fx:id="patientPassword" promptText="Password" />
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button fx:id="patientLogin" mnemonicParsing="false" onAction="#onPatientLoginClick" prefHeight="25.0" prefWidth="50.0" text="Login" />
+                  <Button fx:id="newPatient" mnemonicParsing="false" onAction="#onCreateAccountClick" prefHeight="25.0" prefWidth="101.0" text="Create Account" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="PatientLoginStatusLabel" alignment="CENTER" prefHeight="40.0" prefWidth="180.0" wrapText="true" />
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>
