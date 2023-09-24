@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fa1cdba-30e7-4ab9-996e-c222cbfd9285" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CreateAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CreateAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DoctorPortal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DoctorPortal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DoctorPortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DoctorPortalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/NursePortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/NursePortalController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/DoctorPortalController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/LoginController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/connection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/LoginScreen.fxml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/MainApp.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSE360Project.iml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="20etcUKp52Etpjx4YkIlM1F4ZMa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.27.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tacos\OneDrive - Arizona State University\Fall 2021\CSE360\project\Phase 3\CSE360Project\src\com\company" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tacos\OneDrive - Arizona State University\Fall 2021\CSE360\project\Phase 3\CSE360Project\lib" />
+      <recent name="C:\Users\tacos\OneDrive - Arizona State University\Fall 2021\CSE360\project\Phase 3\CSE360Project\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MainApp" />
+      <module name="CSE360Project" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-17.0.1\lib&quot; --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fa1cdba-30e7-4ab9-996e-c222cbfd9285" name="Changes" comment="" />
+      <created>1636416964055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636416964055</updated>
+      <workItem from="1636522328572" duration="11127000" />
+      <workItem from="1636693532300" duration="11338000" />
+      <workItem from="1636713444457" duration="70000" />
+      <workItem from="1636778873937" duration="12522000" />
+      <workItem from="1636852427110" duration="7522000" />
+      <workItem from="1636962135662" duration="2590000" />
+      <workItem from="1637008842285" duration="1896000" />
+      <workItem from="1637018427851" duration="1766000" />
+      <workItem from="1637123710580" duration="10884000" />
+      <workItem from="1637187009748" duration="1804000" />
+      <workItem from="1637199338396" duration="6531000" />
+      <workItem from="1637205942100" duration="10144000" />
+      <workItem from="1637224798644" duration="80000" />
+      <workItem from="1637638412255" duration="9101000" />
+      <workItem from="1637797350591" duration="24826000" />
+      <workItem from="1637913165550" duration="9026000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
