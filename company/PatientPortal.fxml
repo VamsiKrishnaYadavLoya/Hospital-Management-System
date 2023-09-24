@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane fx:id="PatientPortalPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="PatientInfoTab" text="Patient Info">
+      <content>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="7.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" prefHeight="372.0" prefWidth="593.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="341.0" prefWidth="251.0" spacing="5.0">
+                           <children>
+                              <Label text="Records" />
+                              <ListView fx:id="PatientRecordList" prefHeight="356.0" prefWidth="265.0" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="371.0" prefWidth="317.0" spacing="8.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <GridPane hgap="20.0" prefHeight="168.0" prefWidth="296.0">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="143.60003662109375" minWidth="10.0" prefWidth="115.20001220703125" />
+                                  <ColumnConstraints hgrow="ALWAYS" maxWidth="212.39996337890625" minWidth="10.0" prefWidth="180.79998779296875" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Your Name:" />
+                                    <Label text="Your Date of Birth:" GridPane.rowIndex="1" />
+                                    <Label text="Your Pharmacy" GridPane.rowIndex="2" />
+                                    <Label text="Your Phone Num:" GridPane.rowIndex="3" />
+                                    <Label text="Your Address" GridPane.rowIndex="4" />
+                                    <Label text="Your Insurer:" GridPane.rowIndex="5" />
+                                    <Label fx:id="PatientNameLabel" GridPane.columnIndex="1" />
+                                    <Label fx:id="PatientDOBLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="PatientPharmacyLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="PatientPhoneLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label fx:id="PatientAddressLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="PatientInsuranceLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="Your Doctor:" GridPane.rowIndex="6" />
+                                    <Label fx:id="DoctorLabel" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="Your Nurse:" GridPane.rowIndex="7" />
+                                    <Label fx:id="NurseLabel" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                 </children>
+                              </GridPane>
+                              <TextArea fx:id="PatientRecordTextArea" editable="false" prefHeight="197.0" prefWidth="251.0" promptText="Select a record from the left to display it here" wrapText="true" VBox.vgrow="ALWAYS">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </TextArea>
+                              <Button fx:id="LogoutButton" cancelButton="true" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="25.0" prefWidth="93.0" text="Logout" VBox.vgrow="NEVER" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Edit Information">
+        <content>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="11.0" prefHeight="348.0" prefWidth="571.0">
+                     <padding>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="549.0" text="Press the Update Info button to change your personal information" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="First Name">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="FirstNameField" prefHeight="25.0" prefWidth="155.0" promptText="Enter your first name" />
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="65.0" text="Last Name" />
+                              <TextField fx:id="LastNameField" prefHeight="25.0" prefWidth="155.0" promptText="Enter your last name" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Your Date of Birth">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="DOBField" editable="false" prefHeight="25.0" prefWidth="224.0" promptText="Enter your date of birth" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Your Pharmacy">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="PharmacyField" prefHeight="25.0" prefWidth="245.0" promptText="Enter your pharmacy's address" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Your Phone Num.">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="PhoneField" prefHeight="25.0" prefWidth="245.0" promptText="Enter your phone number" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Your Address">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="AddressField" prefHeight="25.0" prefWidth="245.0" promptText="Enter your address" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Insurance Provider">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="InsuranceField" prefHeight="25.0" prefWidth="245.0" promptText="Enter your insurance provider" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <PasswordField fx:id="verifyInfoEditField" prefHeight="25.0" prefWidth="350.0" promptText="Enter your password to verify changes" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="UpdateInfoButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onUpdateInfoClick" prefHeight="25.0" prefWidth="118.0" text="Update Info" />
+                        <Label fx:id="UpdateInfoStatusLabel" alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="306.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Change Username/Password">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="11.0" prefHeight="348.0" prefWidth="571.0">
+                     <padding>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="50.0" prefWidth="350.0" text="Press the Update Account button to change your username and password." wrapText="true" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Old username">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="OldUsernameField" onKeyTyped="#onOldUsernameFieldType" prefHeight="25.0" prefWidth="245.0" promptText="Enter your old username" />
+                              <Label fx:id="OldUsernameStatusLabel" prefHeight="35.0" prefWidth="170.0" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="Old password">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <PasswordField fx:id="OldPasswordField" onKeyTyped="#onOldPasswordFieldType" prefHeight="25.0" prefWidth="245.0" promptText="Enter your old password" />
+                              <Label fx:id="OldPasswordStatusLabel" prefHeight="35.0" prefWidth="170.0" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="New username">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="NewUsernameField" onKeyTyped="#onNewUsernameFieldType" prefHeight="25.0" prefWidth="245.0" promptText="Enter your old username" />
+                              <Label fx:id="NewUsernameStatusLabel" prefHeight="35.0" prefWidth="170.0" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="551.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="120.0" text="New password">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <PasswordField fx:id="NewPasswordField" onKeyTyped="#onNewPasswordFieldType" prefHeight="25.0" prefWidth="245.0" promptText="Enter your old password" />
+                              <Label fx:id="NewPasswordStatusLabel" prefHeight="35.0" prefWidth="170.0" wrapText="true" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="UpdateAccountButton" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onUpdateAccountClick" prefHeight="25.0" prefWidth="118.0" text="Update Account" />
+                        <Label fx:id="UpdateAccountStatusLabel" alignment="BOTTOM_CENTER" prefHeight="38.0" prefWidth="306.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Change Doctor">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="370.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="false" maxWidth="1.7976931348623157E308" prefHeight="350.0" prefWidth="585.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <GridPane hgap="10.0" prefHeight="292.0" prefWidth="380.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.7999755859375" minWidth="10.0" prefWidth="96.39995117187499" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="200.800048828125" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Current Doctor:" />
+                                    <Label text="Selected Doctor:" GridPane.rowIndex="1" />
+                                    <Label fx:id="CurrentDoctorLabel" GridPane.columnIndex="1" />
+                                    <Label fx:id="SelectedDoctorLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="ChangeDoctorStatusLabel" alignment="BOTTOM_CENTER" prefHeight="43.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <ListView fx:id="ChangeDoctorList" prefHeight="284.0" prefWidth="344.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="551.0" spacing="100.0">
+                           <children>
+                              <PasswordField fx:id="verifyDoctorChangeField" prefHeight="25.0" prefWidth="350.0" promptText="Enter your password to verify changes" />
+                              <Button fx:id="ChangeDoctorButton" mnemonicParsing="false" onAction="#onChangeDoctorClick" text="Change Doctor" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+    <Tab fx:id="PatientMessagesTab" text="Messages">
+      <content>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="6.0" layoutY="3.0" prefHeight="363.0" prefWidth="587.0" spacing="20.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <ListView fx:id="MessagesList" prefHeight="323.0" prefWidth="228.0" HBox.hgrow="ALWAYS" />
+                        <VBox prefHeight="323.0" prefWidth="338.0" spacing="5.0">
+                           <children>
+                              <TextArea fx:id="ReadMessageField" editable="false" maxHeight="1.7976931348623157E308" prefHeight="130.0" prefWidth="329.0" promptText="Select a message from the list on the left to read it here" wrapText="true" VBox.vgrow="ALWAYS" />
+                              <Label alignment="BOTTOM_CENTER" prefHeight="16.0" prefWidth="313.0" text="Enter your message below" VBox.vgrow="NEVER" />
+                              <TextArea fx:id="SentMessageField" prefHeight="137.0" prefWidth="329.0" promptText="Enter a message to send to your doctor or nurse" VBox.vgrow="ALWAYS" />
+                              <HBox alignment="CENTER" prefHeight="52.0" prefWidth="329.0" spacing="20.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <Label fx:id="MessageStatusLabel" prefHeight="34.0" prefWidth="96.0" text="Message Unsent" textFill="#9c9c9c" wrapText="true" />
+                                    <Button fx:id="SendToDoctorButton" mnemonicParsing="false" onAction="#onSendToDoctorClick" prefHeight="42.0" prefWidth="81.0" text="Send to your Doctor" wrapText="true" />
+                                    <Button fx:id="SendToNurseButton" mnemonicParsing="false" onAction="#onSendToNurseClick" prefHeight="43.0" prefWidth="76.0" text="Send to your Nurse" wrapText="true" />
+                                 </children>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
